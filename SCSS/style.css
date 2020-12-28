@@ -6,7 +6,11 @@
 }
 
 .max-width {
-  max-width: 1200px;
+  max-width: 1400px;
+}
+
+.padding {
+  padding: 1.5em;
 }
 
 /* ---- HEADER ---- */
@@ -89,16 +93,16 @@ header .exploration .container-explor a:hover {
 main {
   margin: auto;
   font-family: "Roboto", sans-serif;
-  padding: 2em 1.5em;
 }
 
 main .container-fonction {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -109,8 +113,8 @@ main .fonction {
   margin: 20px 10px;
   padding: 0 40px;
   border-radius: 20px;
-  -webkit-box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.15);
   background-color: rgba(216, 216, 216, 0.2);
   font-weight: 500;
   display: -webkit-box;
@@ -149,5 +153,84 @@ main .fonction:hover {
 
 main .fonction:hover i {
   color: #9356DC;
+}
+
+main .container-carte {
+  margin-top: 30px;
+  background-color: rgba(216, 216, 216, 0.2);
+}
+
+main .container-carte-flex {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(230px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+main .carte {
+  margin-top: 25px;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  color: black;
+  overflow: hidden;
+}
+
+main .carte .boite-img {
+  min-width: 100%;
+  height: 150px;
+}
+
+main .carte .boite-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .carte .boite-text {
+  padding: 0.6em 0.5em;
+  position: relative;
+}
+
+main .carte .boite-text p {
+  font-weight: 300;
+}
+
+main .carte .boite-text .boite-like {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+main .carte .boite-text .boite-like i {
+  font-size: 25px;
+}
+
+footer {
+  margin: auto;
+  margin-top: 30px;
+  height: 150px;
+  background-color: #292929;
+}
+
+footer h4 {
+  color: white;
+  font-size: 20px;
+  font-family: "Shrikhand", cursive;
+}
+
+footer .container-footer {
+  max-width: 900px;
+  color: white;
+}
+
+footer .container-footer a {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
