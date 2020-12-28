@@ -1,0 +1,153 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.max-width {
+  max-width: 1200px;
+}
+
+/* ---- HEADER ---- */
+header {
+  width: 100%;
+  margin: auto;
+}
+
+header .logo {
+  padding: 20px;
+  text-align: center;
+  -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+header .localisation {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  padding: 15px;
+  background-color: rgba(167, 167, 167, 0.384);
+}
+
+header .localisation i {
+  padding: 0 10px;
+}
+
+header .exploration {
+  margin: auto;
+  background-color: rgba(216, 216, 216, 0.2);
+  padding: 2em;
+}
+
+header .exploration .container-explor {
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+header .exploration .container-explor h1 {
+  font-size: 20px;
+}
+
+header .exploration .container-explor p {
+  font-weight: 300;
+}
+
+header .exploration .container-explor a {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 999px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+}
+
+header .exploration .container-explor a:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+/* ---- MAIN ---- */
+main {
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  padding: 2em 1.5em;
+}
+
+main .container-fonction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .fonction {
+  width: 350px;
+  height: 60px;
+  margin: 20px 10px;
+  padding: 0 40px;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(216, 216, 216, 0.2);
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+  position: relative;
+}
+
+main .fonction i {
+  color: rgba(128, 128, 128, 0.788);
+  font-size: 18px;
+  -webkit-transition: color 300ms;
+  transition: color 300ms;
+}
+
+main .fonction .numero {
+  padding: 8px;
+  font-size: 10px;
+  font-weight: 900;
+  color: white;
+  border-radius: 100%;
+  background-color: #9356DC;
+  position: absolute;
+  left: -10px;
+}
+
+main .fonction:hover {
+  background-color: rgba(147, 86, 220, 0.2);
+}
+
+main .fonction:hover i {
+  color: #9356DC;
+}
+/*# sourceMappingURL=style.css.map */
