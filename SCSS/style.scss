@@ -17,7 +17,7 @@
 
 .padding
 {
-    padding: 1.5em;
+    padding: 2em;
 }
 
 /* ---- HEADER ---- */
@@ -100,6 +100,11 @@ main
     margin: auto;
     font-family: $roboto;
 
+    h3
+    {
+        font-size: 20px;
+    }
+
     .container-fonction
     {
         display: flex;
@@ -164,17 +169,18 @@ main
     {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-        gap: 20px;
+        gap: 25px;
+        padding: 2em 0;
     }
 
     .carte
     {
-        margin-top: 25px;
         border-radius: 10px;
         box-shadow: $shadowDIV;
         text-decoration: none;
         color: black;
         overflow: hidden;
+        transition: transform 300ms;
 
         .boite-img
         {
@@ -212,34 +218,55 @@ main
                 }
             }
         }
+
+        /* Animation carte */
+        &:hover
+        {
+            transform: scale(1.05);
+        }
     }
 }
 
 footer
 {
     margin:auto;
-    margin-top: 30px;
-    height: 150px;
+    height: 170px;
     background-color: rgb(41, 41, 41);
+    padding: 1em 1.5em;
 
     h4
     {
         color: white;
+        padding-bottom: 10px;
         font-size: 20px;
         font-family: $shrikhand;
     }
 
-    .container-footer
+    .container-links
     {
-        max-width: 900px;
-        color: white;
-
-        a
+        
+        ul
         {
-            display: block;
-            font-family: $roboto;
-            text-decoration: none;
-            color: white;
+            list-style-type: none;
+
+            li
+            {
+                padding: 2px 0;  
+
+                a 
+                {
+                    text-decoration: none;
+                    color: white;
+                    font-family: $roboto;
+
+                    i
+                    {
+                        font-size: 12px;
+                        margin-right: 10px;
+                    }
+                }
+            } 
+
         }
     }
 }
