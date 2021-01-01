@@ -14,6 +14,17 @@
   padding: 2em;
 }
 
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 /* ---- HEADER ---- */
 header {
   width: 100%;
@@ -96,6 +107,9 @@ header .exploration .container-explor a.btn:hover {
 /* ---- MAIN ---- */
 main {
   font-family: "Roboto", sans-serif;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 main h3 {
@@ -144,13 +158,22 @@ main .fonction i {
   transition: color 300ms;
 }
 
-main .fonction .numero {
-  padding: 8px;
-  font-size: 13px;
-  font-weight: 900;
-  color: white;
+main .fonction span {
+  min-width: 25px;
+  height: 25px;
   border-radius: 100%;
   background-color: #9356DC;
+  font-weight: 700;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   left: -10px;
 }
@@ -244,7 +267,9 @@ footer {
   width: 100%;
   height: 170px;
   background-color: #292929;
-  padding: 1em 1.5em;
+  padding: 1em 2em;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 footer h4 {
