@@ -73,10 +73,11 @@ main
         align-items: center;
         justify-content: space-between;
         font-family: $shrikhand;
+        font-size: 13px;
 
-        i
+        .container-like
         {
-            font-size: 30px;
+            @include Coeur(30px);
         }
     }
 }
@@ -163,12 +164,12 @@ section
         box-shadow: $shadowDIV;
         background-color: white;
         border-radius: 10px;
-        transition: grid-template-columns 300ms;
+        transition: all 300ms;
         cursor: pointer;
+        /* ---- Animation pour l'apparition progressive (@Keyframe lignes 237) ---- */
+        animation: FadeIn 500ms ease-in-out;
 
-        animation: Anima 500ms;
-        animation-timing-function: ease-in-out;
-
+        /* ---- Transition Cloche ---- */
         &:hover
         {
             grid-template-columns: auto 50px 60px;
@@ -230,11 +231,10 @@ section
 footer
 {
     @include Footer;
-    
 }
 
-/* Animation */
-@keyframes Anima
+/* ---- Animation Cloche ---- */
+@keyframes FadeIn
 {
     from
     {

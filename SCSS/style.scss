@@ -210,16 +210,9 @@ main
                 font-weight: 300;
             }
 
-            .boite-like
+            .container-like
             {
-                position: absolute;
-                top: 15px;
-                right: 20px;
-
-                i
-                {
-                    font-size: 25px;
-                }
+                @include Coeur(25px);
             }
         }
 

@@ -84,10 +84,49 @@ main .titre-main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-family: "Shrikhand", cursive;
+  font-size: 13px;
 }
 
-main .titre-main i {
+main .titre-main .container-like {
+  min-width: 27px;
+  height: 25px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+main .titre-main .container-like .boite-coeur {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+main .titre-main .container-like .boite-coeur i {
+  position: absolute;
   font-size: 30px;
+  cursor: pointer;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+main .titre-main .container-like .boite-coeur .fas2 {
+  opacity: 0;
+}
+
+main .titre-main .container-like .boite-coeur:hover .fas1 {
+  opacity: 0;
+}
+
+main .titre-main .container-like .boite-coeur:hover .fas2 {
+  opacity: 1;
+}
+
+main .titre-main .container-like .boite-coeur i:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#9356DC), to(#FF79DA));
+  background-image: linear-gradient(to right, #9356DC, #FF79DA);
+  color: transparent;
 }
 
 section {
@@ -227,14 +266,13 @@ section .btn-com a.btn:hover {
           box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.15);
   background-color: white;
   border-radius: 10px;
-  -webkit-transition: grid-template-columns 300ms;
-  transition: grid-template-columns 300ms;
-  transition: grid-template-columns 300ms, -ms-grid-columns 300ms;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
   cursor: pointer;
-  -webkit-animation: Anima 500ms;
-          animation: Anima 500ms;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+  /* ---- Animation pour l'apparition progressive (@Keyframe lignes 237) ---- */
+  -webkit-animation: FadeIn 500ms ease-in-out;
+          animation: FadeIn 500ms ease-in-out;
+  /* ---- Transition Cloche ---- */
 }
 
 .container-flex .boite:hover {
@@ -348,8 +386,8 @@ footer .container-links ul li a:hover {
   text-decoration: underline;
 }
 
-/* Animation */
-@-webkit-keyframes Anima {
+/* ---- Animation Cloche ---- */
+@-webkit-keyframes FadeIn {
   from {
     opacity: 0;
     -webkit-transform: translateY(20px);
@@ -359,7 +397,7 @@ footer .container-links ul li a:hover {
     opacity: 1;
   }
 }
-@keyframes Anima {
+@keyframes FadeIn {
   from {
     opacity: 0;
     -webkit-transform: translateY(20px);

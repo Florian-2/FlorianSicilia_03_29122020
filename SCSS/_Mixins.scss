@@ -72,3 +72,46 @@
         box-shadow: 10px 10px 20px rgba($color: #000000, $alpha: .40);
     }
 }
+
+@mixin Coeur($size) 
+{
+    min-width: 27px;
+    height: 25px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    .boite-coeur
+    {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        
+        i
+        {
+            position: absolute;
+            font-size: $size;
+            cursor: pointer;    
+            background-clip: text;
+            -webkit-background-clip: text;
+            transition: all 1s;
+        }
+        .fas2
+        {
+            opacity: 0;
+        }
+        &:hover .fas1
+        {
+            opacity: 0;
+        }
+        &:hover .fas2
+        {
+            opacity: 1;
+        }
+        i:hover
+        {
+            background-image: linear-gradient(to right, #9356DC, #FF79DA);
+            color: transparent;
+        }
+    }  
+}
