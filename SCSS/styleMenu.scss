@@ -112,8 +112,6 @@ section
         }
     }
 
-
-
     h2
     {
         font-size: 20px;
@@ -124,7 +122,7 @@ section
         &::before
         {
             content: '';
-            width: 30px;
+            width: 40px;
             height: 3px;
             background: $tritaire;
             position: absolute;
@@ -145,7 +143,6 @@ section
             padding: 15px 40px;
         }
     }
-
 }
 
 
@@ -166,18 +163,18 @@ section
         border-radius: 10px;
         transition: all 300ms;
         cursor: pointer;
-        /* ---- Animation pour l'apparition progressive (@Keyframe lignes 237) ---- */
+        /* Animation pour l'apparition progressive (@Keyframe lignes 237) */
         animation: FadeIn 500ms ease-in-out;
 
         /* ---- Transition Cloche ---- */
         &:hover
         {
             grid-template-columns: auto 50px 60px;
-        }
 
-        &:hover span.icon i.fas
-        {
-            transform: rotate(360deg);
+            span.icon i.fas
+            {
+                transform: rotate(360deg);
+            }
         }
     }
 

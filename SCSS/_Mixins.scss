@@ -75,11 +75,8 @@
 
 @mixin Coeur($size) 
 {
-    min-width: 27px;
-    height: 25px;
-    position: absolute;
-    top: 15px;
-    right: 15px;
+    min-width: 30px;
+    height: 30px;
 
     .boite-coeur
     {
