@@ -213,6 +213,10 @@ main
             .container-like
             {
                 @include Coeur(25px);
+
+                position: absolute;
+                top: 15px;
+                right: 10px;
             }
         }
 

@@ -251,6 +251,9 @@ main .carte .boite-text p {
 main .carte .boite-text .container-like {
   min-width: 30px;
   height: 30px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
 }
 
 main .carte .boite-text .container-like .boite-coeur {
