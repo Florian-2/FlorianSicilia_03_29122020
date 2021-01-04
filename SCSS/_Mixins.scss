@@ -1,9 +1,8 @@
 @mixin Footer 
 {
     width: 100%;
-    height: 170px;
     background-color: rgb(41, 41, 41);
-    padding: 1em 2em;
+    padding: 1.7em 2em;
 
     h4
     {
@@ -69,7 +68,7 @@
     &:hover
     {
         transform: scale(1.07);
-        box-shadow: 10px 10px 20px rgba($color: #000000, $alpha: .40);
+        box-shadow: 6px 6px 15px rgba($color: #000000, $alpha: .40);
     }
 }
 
