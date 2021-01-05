@@ -90,24 +90,31 @@
             cursor: pointer;    
             background-clip: text;
             -webkit-background-clip: text;
-            transition: all 1s;
+            transition: all 900ms cubic-bezier(0,1.03,1,1.44);
         }
+// cubic-bezier(.17,.8,.44,.51)
         .fas2
         {
             opacity: 0;
         }
-        &:hover .fas1
+
+        &:hover 
         {
-            opacity: 0;
-        }
-        &:hover .fas2
-        {
-            opacity: 1;
-        }
-        i:hover
-        {
-            background-image: linear-gradient(to right, #9356DC, #FF79DA);
-            color: transparent;
+            i
+            {
+                background-image: linear-gradient(to right, #9356DC, #FF79DA);
+                color: transparent;
+            }
+
+            .fas1
+            {
+                opacity: 0;
+            }
+
+            .fas2
+            {
+                opacity: 1;
+            }
         }
     }  
 }

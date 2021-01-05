@@ -104,12 +104,18 @@ main .titre-main .container-like .boite-coeur i {
   cursor: pointer;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 900ms cubic-bezier(0, 1.03, 1, 1.44);
+  transition: all 900ms cubic-bezier(0, 1.03, 1, 1.44);
 }
 
 main .titre-main .container-like .boite-coeur .fas2 {
   opacity: 0;
+}
+
+main .titre-main .container-like .boite-coeur:hover i {
+  background-image: -webkit-gradient(linear, left top, right top, from(#9356DC), to(#FF79DA));
+  background-image: linear-gradient(to right, #9356DC, #FF79DA);
+  color: transparent;
 }
 
 main .titre-main .container-like .boite-coeur:hover .fas1 {
@@ -118,12 +124,6 @@ main .titre-main .container-like .boite-coeur:hover .fas1 {
 
 main .titre-main .container-like .boite-coeur:hover .fas2 {
   opacity: 1;
-}
-
-main .titre-main .container-like .boite-coeur i:hover {
-  background-image: -webkit-gradient(linear, left top, right top, from(#9356DC), to(#FF79DA));
-  background-image: linear-gradient(to right, #9356DC, #FF79DA);
-  color: transparent;
 }
 
 section {
@@ -443,4 +443,4 @@ footer .container-links ul li a:hover {
   -webkit-animation-duration: 2.4s;
           animation-duration: 2.4s;
 }
-/*# sourceMappingURL=styleMenu.css.map */
+/*# sourceMappingURL=style-menu.css.map */
