@@ -109,11 +109,6 @@ section
             .c-grid1{grid-area: entre;}
             .c-grid2{grid-area: plat;}
             .c-grid3{ grid-area: dessert;}
-
-            // .boite
-            // {
-            //     .tex
-            // }
         }
     }
 
@@ -172,7 +167,7 @@ section
         border-radius: 10px;
         cursor: pointer;
         overflow: hidden;
-
+        animation: FadeIn 500ms ease-in-out;
 
         &:hover
         {

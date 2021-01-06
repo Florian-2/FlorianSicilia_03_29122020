@@ -185,6 +185,7 @@ section .btn-com a.btn:hover {
   border-radius: 10px;
   cursor: pointer;
   overflow: hidden;
+  animation: FadeIn 500ms ease-in-out;
 }
 .container-flex .boite:hover .icon {
   width: 65px;
