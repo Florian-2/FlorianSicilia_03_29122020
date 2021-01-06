@@ -109,6 +109,11 @@ section
             .c-grid1{grid-area: entre;}
             .c-grid2{grid-area: plat;}
             .c-grid3{ grid-area: dessert;}
+
+            // .boite
+            // {
+            //     .tex
+            // }
         }
     }
 
@@ -168,6 +173,7 @@ section
         cursor: pointer;
         overflow: hidden;
 
+
         &:hover
         {
             .icon
@@ -212,10 +218,7 @@ section
     {
         display: flex;
         justify-content: flex-end;
-        background-color: rgb(185, 185, 185);
         align-items: flex-end;
-        // padding-bottom: 10px;
-        // padding-right: 15px;
         padding: 10px;
     }
 
@@ -223,7 +226,6 @@ section
     {
         transition: width 300ms;
         width: 0px;
-        // margin-right: -65px;
         overflow: hidden;
         background-color: $tritaire;
         display: flex;

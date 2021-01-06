@@ -215,7 +215,6 @@ section .btn-com a.btn:hover {
 .container-flex .prix {
   display: flex;
   justify-content: flex-end;
-  background-color: #b9b9b9;
   align-items: flex-end;
   padding: 10px;
 }
