@@ -100,7 +100,7 @@ section {
 }
 section .container-grid {
   display: grid;
-  grid-template-columns: minmax(350px, 700px);
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(3, auto);
   justify-content: center;
   gap: 20px;
@@ -175,66 +175,60 @@ section .btn-com a.btn:hover {
   flex-direction: column;
   gap: 20px;
 }
-.container-flex .container-boite {
-  display: flex;
-}
 .container-flex .boite {
-  width: 100%;
   display: flex;
-  justify-content: space-between;
-  background-color: white;
-  box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
   cursor: pointer;
+  background-color: white;
+  border-radius: 10px;
   overflow: hidden;
+  /* Animation pour l'apparition progressive (@Keyframe lignes 237) */
   animation: FadeIn 500ms ease-in-out;
+  /* ---- Transition Cloche ---- */
 }
-.container-flex .boite:hover .icon {
+.container-flex .boite .boite-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+}
+.container-flex .boite:hover span.icon {
   width: 65px;
 }
-.container-flex .boite:hover .icon i.fas {
-  transform: rotate(-360deg);
+.container-flex .boite:hover span.icon i.fas {
+  transform: rotate(360deg);
 }
-.container-flex .text {
-  padding: 10px 0 10px 10px;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-.container-flex .text h3 {
-  padding-bottom: 5px;
+.container-flex p, .container-flex h3 {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  width: 80%;
 }
-.container-flex .text p {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 80%;
+.container-flex h3 {
+  padding: 10px 10px 2px 10px;
 }
-.container-flex .prix {
+.container-flex p {
+  grid-row: 2/3;
+  padding: 2px 10px 10px 10px;
+}
+.container-flex span.prix {
+  grid-row: 1/3;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding: 10px;
-  width: 70px;
-  background-color: red;
+  padding: 10px 15px;
 }
-.container-flex .icon {
+.container-flex span.icon {
+  width: 0;
   transition: width 300ms;
-  width: 0px;
-  overflow: hidden;
   background-color: #99E2D0;
+  color: white;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.container-flex .icon i.fas {
+.container-flex i.fas {
   transition: transform 300ms;
   font-size: 20px;
-  color: white;
 }
 
 footer {
