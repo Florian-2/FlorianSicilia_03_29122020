@@ -189,23 +189,22 @@ section
         display: flex;
         flex-direction: column;
         flex-grow: 1;
-        flex-shrink: 2;
 
         h3
         {
-            width: 80%;
             padding-bottom: 5px;
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
+            width: 80%;
         }
 
         p
         {
-            width: 80%;
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
+            width: 80%;
         }
     }
 
@@ -215,6 +214,8 @@ section
         justify-content: flex-end;
         align-items: flex-end;
         padding: 10px;
+        width: 70px;
+        background-color: red;
     }
 
     .icon

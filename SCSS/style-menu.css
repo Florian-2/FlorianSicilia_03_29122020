@@ -200,26 +200,27 @@ section .btn-com a.btn:hover {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  flex-shrink: 2;
 }
 .container-flex .text h3 {
-  width: 80%;
   padding-bottom: 5px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  width: 80%;
 }
 .container-flex .text p {
-  width: 80%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  width: 80%;
 }
 .container-flex .prix {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   padding: 10px;
+  width: 70px;
+  background-color: red;
 }
 .container-flex .icon {
   transition: width 300ms;
