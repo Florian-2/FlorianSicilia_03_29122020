@@ -108,7 +108,7 @@ main {
 }
 @media screen and (min-width: 1300px) {
   main {
-    max-width: 1300px;
+    max-width: 1340px;
     margin: -50px auto 0;
   }
 }
@@ -229,7 +229,7 @@ section .btn-com a.btn::after {
   right: 0;
   bottom: 0;
   z-index: -1;
-  background: linear-gradient(-10deg, #9b63df, #ff88de);
+  background: linear-gradient(-10deg, #a16be0, #ff93e1);
   opacity: 0;
   transition: opacity 300ms;
 }
@@ -305,7 +305,9 @@ section .btn-com a.btn:hover::after {
 footer {
   width: 100%;
   background-color: #292929;
-  padding: 1.7em 2em;
+}
+footer .max-width {
+  padding: 2em;
 }
 footer h4 {
   color: white;

@@ -2,7 +2,11 @@
 {
     width: 100%;
     background-color: rgb(41, 41, 41);
-    padding: 1.7em 2em;
+
+    .max-width
+    {
+        padding: 2em;
+    }
 
     h4
     {
@@ -78,7 +82,7 @@
         right: 0;
         bottom: 0;
         z-index: -1;
-        background: linear-gradient(-10deg, lighten($primaire, 3), lighten($secondaire, 3));
+        background: linear-gradient(-10deg, lighten($primaire, 5%), lighten($secondaire, 5%));
         opacity: 0;
         transition: opacity 300ms;
     }
