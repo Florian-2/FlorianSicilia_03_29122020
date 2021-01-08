@@ -20,6 +20,12 @@ body
     flex-direction: column;
 }
 
+.container-loader
+{
+    @include Loader;
+}
+
+
 /* ---- HEADER ---- */
 header
 {

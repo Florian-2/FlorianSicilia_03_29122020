@@ -15,6 +15,11 @@ body
     flex-direction: column;
 }
 
+.container-loader
+{
+    @include Loader;
+}
+
 header
 {
     width: 100%;
