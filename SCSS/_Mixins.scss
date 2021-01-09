@@ -106,44 +106,53 @@
 
     .boite-coeur
     {
-        width: 100%;
-        height: 100%;
         position: relative;
+        width: 100%;
+        height: 100%;    
+    }
+
+    i
+    {
+        position: absolute;
+        font-size: 30px;
+        cursor: pointer;            
+        -webkit-background-clip: text;
         
+    }
+
+    .fas2
+    {
+        opacity: 0;
+    }
+
+    &:hover 
+    {
         i
         {
-            position: absolute;
-            font-size: $size;
-            cursor: pointer;    
-            background-clip: text;
-            -webkit-background-clip: text;
-            transition: all 600ms cubic-bezier(0,1.03,1,1.44);
+            background-image: linear-gradient(to left,#9356DC, #FF79DA);   
         }
-        
-        .fas2
+
+        .fas1{animation: fas1coeur 800ms forwards;}
+
+        .fas2{animation: fas2coeur 800ms 100ms forwards;}
+    }
+
+    @keyframes fas1coeur
+    {
+        100%
         {
             opacity: 0;
         }
+    }
 
-        &:hover 
+    @keyframes fas2coeur
+    {
+        100%
         {
-            i
-            {
-                background-image: linear-gradient(to right, #9356DC, #FF79DA);
-                color: transparent;
-            }
-
-            .fas1
-            {
-                opacity: 0;
-            }
-
-            .fas2
-            {
-                opacity: 1;
-            }
+            opacity: 1;
+            color: transparent;
         }
-    }  
+    }
 }
 
 @mixin Loader 

@@ -173,8 +173,6 @@ section
             display: grid;
             grid-template-columns: repeat(2, auto);
             grid-template-rows: repeat(2, auto);
-
-
         }
         /* ---- Transition Cloche ---- */
         &:hover
@@ -223,7 +221,7 @@ section
     span.icon
     {
         width: 0;
-        transition: width 300ms;
+        transition: width 400ms;
         background-color: $tritaire;
         color: white;
         overflow: hidden;
@@ -234,7 +232,7 @@ section
 
     i.fas
     {
-        transition: transform 300ms;
+        transition: transform 400ms;
         font-size: 20px;
     }
 }
