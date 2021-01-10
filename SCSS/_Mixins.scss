@@ -163,7 +163,7 @@
     z-index: 1000;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#9256dc98, #ff79d99f);
+    background: rgba($color: white, $alpha: .8);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,18 +181,18 @@
 
         &:nth-child(1)
         {
-            background-color: #9356DC;
+            background-color: $primaire;
             animation-duration: 600ms;
         }
         &:nth-child(2)
         {
-            background-color: #FF79DA;
+            background-color: $secondaire;
             animation-delay: 200ms;
             animation-duration: 600ms;
         }
         &:nth-child(3)
         {
-            background-color: #99E2D0;
+            background-color: $tritaire;
             animation-delay: 400ms;
             animation-duration: 600ms;
         }
