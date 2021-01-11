@@ -55,7 +55,7 @@ body {
   animation-duration: 600ms;
 }
 .container-loader span:nth-child(3) {
-  background-color: red;
+  background-color: #99E2D0;
   animation-delay: 400ms;
   animation-duration: 600ms;
 }
