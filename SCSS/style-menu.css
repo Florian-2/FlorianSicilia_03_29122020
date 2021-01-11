@@ -15,61 +15,6 @@ body {
   flex-direction: column;
 }
 
-.container-loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  animation: visible 200ms 1.7s forwards;
-}
-.container-loader span {
-  width: 15px;
-  height: 55px;
-  border-radius: 3px;
-  transform: scaleY(0.3);
-  animation-name: loader;
-  animation-iteration-count: 3;
-}
-.container-loader span:nth-child(1) {
-  background-color: #9356DC;
-  animation-duration: 600ms;
-}
-.container-loader span:nth-child(2) {
-  background-color: #FF79DA;
-  animation-delay: 200ms;
-  animation-duration: 600ms;
-}
-.container-loader span:nth-child(3) {
-  background-color: #99E2D0;
-  animation-delay: 400ms;
-  animation-duration: 600ms;
-}
-@keyframes visible {
-  0% {
-    opacity: 1;
-    z-index: 1000;
-  }
-  100% {
-    opacity: 0;
-    z-index: -1000;
-  }
-}
-@keyframes loader {
-  0%, 100% {
-    transform: scaleY(0.3);
-  }
-  50% {
-    transform: scaleY(1);
-  }
-}
-
 header {
   width: 100%;
   position: relative;
@@ -261,7 +206,7 @@ section .btn-com a.btn:hover::after {
   border-radius: 10px;
   overflow: hidden;
   /* Animation pour l'apparition progressive (@Keyframe lignes 237) */
-  animation: FadeIn 500ms ease-in-out;
+  animation: FadeIn 500ms ease-in-out both;
   /* ---- Transition Cloche ---- */
 }
 .container-flex .boite .boite-grid {
@@ -357,35 +302,39 @@ footer .container-links ul li a:hover {
   }
 }
 .container-flex .anima2 {
-  animation-duration: 600ms;
+  animation-delay: 200ms;
 }
 
 .container-flex .anima3 {
-  animation-duration: 900ms;
+  animation-delay: 400ms;
 }
 
 .container-flex .anima4 {
-  animation-duration: 1.2s;
+  animation-delay: 600ms;
 }
 
 .container-flex .anima5 {
-  animation-duration: 1.5s;
+  animation-delay: 800ms;
 }
 
 .container-flex .anima6 {
-  animation-duration: 1.8s;
+  animation-delay: 1s;
 }
 
 .container-flex .anima7 {
-  animation-duration: 2s;
+  animation-delay: 1.2s;
 }
 
 .container-flex .anima8 {
-  animation-duration: 2.2s;
+  animation-delay: 1.4s;
 }
 
 .container-flex .anima9 {
-  animation-duration: 2.4s;
+  animation-delay: 1.6s;
+}
+
+.container-flex .anima10 {
+  animation-delay: 1.8s;
 }
 
 /*# sourceMappingURL=style-menu.css.map */

@@ -15,10 +15,10 @@ body
     flex-direction: column;
 }
 
-.container-loader
-{
-    @include Loader;
-}
+// .container-loader
+// {
+//     @include Loader;
+// }
 
 header
 {
@@ -165,7 +165,7 @@ section
         border-radius: 10px;
         overflow: hidden;
         /* Animation pour l'apparition progressive (@Keyframe lignes 237) */
-        animation: FadeIn 500ms ease-in-out;
+        animation: FadeIn 500ms ease-in-out both;
 
         .boite-grid
         {
@@ -257,11 +257,12 @@ footer
     }
 }
 
-.container-flex .anima2{animation-duration: 600ms;}
-.container-flex .anima3{animation-duration: 900ms;}
-.container-flex .anima4{animation-duration: 1.2s;}
-.container-flex .anima5{animation-duration: 1.5s;}
-.container-flex .anima6{animation-duration: 1.8s;}
-.container-flex .anima7{animation-duration: 2s;}
-.container-flex .anima8{animation-duration: 2.2s;}
-.container-flex .anima9{animation-duration: 2.4s;}
+.container-flex .anima2{animation-delay: 200ms;}
+.container-flex .anima3{animation-delay: 400ms;}
+.container-flex .anima4{animation-delay: 600ms;}
+.container-flex .anima5{animation-delay: 800ms;}
+.container-flex .anima6{animation-delay: 1s;}
+.container-flex .anima7{animation-delay: 1.2s;}
+.container-flex .anima8{animation-delay: 1.4s;}
+.container-flex .anima9{animation-delay: 1.6s;}
+.container-flex .anima10{animation-delay: 1.8s;}
