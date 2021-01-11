@@ -15,10 +15,10 @@ body
     flex-direction: column;
 }
 
-// .container-loader
-// {
-//     @include Loader;
-// }
+.container-loader
+{
+    @include Loader;
+}
 
 header
 {
