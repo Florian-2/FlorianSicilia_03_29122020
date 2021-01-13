@@ -304,13 +304,16 @@ footer {
   flex-shrink: 0;
 }
 footer .max-width {
-  padding: 2em;
+  padding: 1.5em;
 }
 footer h4 {
   color: white;
   padding-bottom: 10px;
   font-size: 20px;
   font-family: "Shrikhand", cursive;
+}
+footer .container-links {
+  padding-bottom: 0.5em;
 }
 footer .container-links ul {
   list-style-type: none;
